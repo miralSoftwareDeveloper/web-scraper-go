@@ -16,3 +16,30 @@ This project is very basic for scrapping webpages by using Golang package called
 5. It create csv file in project folder.
 6. It write header columns and data in csv.
 
+## What I learnt
+1. _ discard operator in Golang for ignoring the value
+```
+   Example :- Standard Forloop - for index, value := range collection {}
+              If you want to ignore index just replace it with underscore "_"
+               for _,value :=range collection{}
+```
+3. defer - In Go, the defer keyword is used to schedule a function call to be executed just before the surrounding function returns.
+           This allows you to ensure that certain cleanup or finalization tasks are performed regardless of how the function exits—
+           whether it returns normally, panics, or encounters a runtime error.
+```
+   Example :-
+               func processFile(filename string) error {
+               file, err := os.Open(filename)
+                if err != nil {
+                    return err
+                }
+                defer file.Close() // Ensure the file is closed when the function exits
+            
+                // ... read and process the file ...
+            
+                return nil // File will be closed automatically when this function returns
+            }
+```
+   
+              
+
