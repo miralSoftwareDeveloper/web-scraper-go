@@ -11,7 +11,7 @@ This project is very basic for scrapping webpages by using Golang package called
 ## What Program does
 1. It visit web url.
 2. It target "li.Product" class.
-3. It OnHtml handler will trigger.
+3. OnHtml Callback function will trigger.
 4. It store html data in type struct.
 5. It create csv file in project folder.
 6. It write header columns and data in csv.
