@@ -42,6 +42,7 @@ This project is very basic for scrapping webpages by using Golang package called
 ```
 3.Go Commands used
 ```
+go mod init filename.go - for creating project.
 go run filename.go - it will run the script.
 go build filename.go - it will build the project and create .exe file in project folder.
 ```
